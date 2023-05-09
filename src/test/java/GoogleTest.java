@@ -31,9 +31,18 @@ public class GoogleTest extends BaseTest {
         System.out.println("Current page code : "+sourceCode);
     }
 
+    @Test
+    public void googleSearch(){
+        googleSteps.goToURL();
+        googleSteps.googleSearchByCssName("Maven");
+        //googleSteps.clickSearchbtn();
+    }
+
+
     @AfterTest
     public void endDriver(){
         googleSteps.endWebDriver();
+
     }
 
 }

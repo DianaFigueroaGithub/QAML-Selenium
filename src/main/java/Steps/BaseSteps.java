@@ -1,9 +1,11 @@
 package Steps;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class BaseSteps {
     public WebDriver webDriver;
+
 
     public BaseSteps(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -54,5 +56,7 @@ public class BaseSteps {
     public void refreshPage(){
         webDriver.navigate().refresh();
     }
+
+
 
 }
